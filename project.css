@@ -71,7 +71,7 @@ main {
     border: 1px solid #f0eee9;
     border-radius: 10px;    
     padding: 25px;
-    width: 260px;
+    width:100%;
     box-shadow: 0 4px 10px rgba(0,0,0,0.02);
     text-align: left;
     transition: transform 0.3s;
@@ -118,7 +118,8 @@ footer {
             border-radius: 10px;
             box-shadow: 0 4px 15px rgb(163, 163, 161);
             width: 90%;
-            max-width: 400px;
+            max-width: 1000px; 
+            width: 90%;
         }
         h2 { text-align: center; color: #0a0a09; }
         .form-group { margin-bottom: 15px; }
@@ -145,7 +146,6 @@ footer {
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 350px;
     text-align: center;
 }
 
@@ -224,4 +224,30 @@ input[type="datetime-local"]:focus {
     object-fit: cover; /* بيمنع الصورة إنها تتمط أو تتبكسل وشكلها يبوظ */
     border-radius: 8px; /* بيعمل دوران خفيف لحواف الصورة لايق مع البوكس */
     margin-bottom: 15px; /* بيعمل مسافة صغيرة بين الصورة واسم الأكلة */
+}
+/* كود خاص للموبايل فقط */
+@media (max-width: 600px) {
+    /* تظبيط المنيو عشان العناصر تيجي تحت بعضها */
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        width: 100% !important; /* يخلي الوجبة تاخد عرض الشاشة */
+        max-width: 300px;
+    }
+
+    /* تظبيط حاوية الفورم والحجز */
+    .container, .booking-container {
+        width: 95% !important;
+        max-width: none !important;
+        padding: 15px;
+    }
+
+    /* تظبيط الـ Nav bar */
+    nav ul li {
+        display: block; /* يخليهم تحت بعض بدل جنب بعض */
+        margin: 10px 0;
+    }
 }
