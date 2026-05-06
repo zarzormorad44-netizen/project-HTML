@@ -71,7 +71,7 @@ main {
     border: 1px solid #f0eee9;
     border-radius: 10px;    
     padding: 25px;
-    width:100%;
+    width:260px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.02);
     text-align: left;
     transition: transform 0.3s;
@@ -118,7 +118,7 @@ footer {
             border-radius: 10px;
             box-shadow: 0 4px 15px rgb(163, 163, 161);
             width: 90%;
-            max-width: 1000px; 
+            max-width: 400px; 
             width: 90%;
         }
         h2 { text-align: center; color: #0a0a09; }
@@ -145,6 +145,7 @@ footer {
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width:350px
     width: 100%;
     text-align: center;
 }
