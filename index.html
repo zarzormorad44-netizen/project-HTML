@@ -1,11 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>Rendez-vous Restaurant</title> 
+   <link rel="stylesheet"  href="project.css">
+<head>  
 <body>
-    
+
+<div class="form-container">
+    <h2>Welcome to Rendez-vous</h2>
+    <form action="#">
+        
+        <div class="form-group">
+            <label for="name">:Full name</label>
+            <input type="text" id="name" name="name" placeholder="enter your name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">:email</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">:Phone number</label>
+            <input type="password" id="tel" name="phone" placeholder="01*******" required>
+        </div>
+        <div class="form-group">
+            <label for="password">:Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="booking-container">
+        <h2 class="title">Reservation🍴</h2>
+        
+        <div class="form-group">
+            <label for="res-time">choose date</label>
+            <input type="datetime-local" id="res-time" name="res-time">
+        </div>
+
+        <div class="radio-group">
+            <label>:Branch</label>
+            <div class="inline">
+                <input type="radio" id="sh" name="Branch" value="branch">
+                <label for="branch">shoubra</label>
+                <input type="radio" id="doq" name="Branch" value=" branch">
+                <label for="branch">Eldoqqi</label>
+            </div>
+
+            <div class="checkbox-group">
+            <label>Confirmation method</label>
+            <div class="inline">
+                <input type="checkbox" id="sms" name="Confirmation method" value="tech">
+                <label for="sms">massage me sms</label>
+            </div>
+            <div class="inline">
+                <input type="checkbox" id="em" name="Confirmation method" value="sports">
+                <label for="em">send me an email</label>
+            </div>
+            <div class="inline">
+                <input type="checkbox" id="ph" name="Confirmation method" value="art">
+                <label for="ph">phone me</label>
+            </div>
+
+        <div class="checkbox-group">
+            <label>Extra survice</label>
+            <div class="inline">
+                <input type="checkbox" id="tab" name="Extra survice" value="tech">
+                <label for="tab">Table decoration</label>
+            </div>
+            <div class="inline">
+                <input type="checkbox" id="phot" name="Extra survice" value="sports">
+                <label for="phot">photography</label>
+            </div>
+            <div class="inline">
+                <input type="checkbox" id="kid" name="Extra survice" value="art">
+                <label for="kid">Kids area</label>
+            </div>
+            <div>
+        <label for="notes">extra notes:</label><br>
+        <textarea id="notes" name="notes" rows="4" cols="40" placeholder="write your notes"></textarea>
+    </div>
+        
+  <a href="menu.html" target="_blank"><button type="button">:next</button></a>  
+
+
+    </form>
+</div>
+
 </body>
 </html>
