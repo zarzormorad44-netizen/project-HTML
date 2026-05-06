@@ -1,0 +1,227 @@
+/* الإعدادات الأساسية والألوان الفاتحة */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdfbf7; /* لون خلفية كريمي فاتح جداً ومريح للعين */
+    color: #4a4a4a; /* لون رمادي غامق للنصوص بدلاً من الأسود الحاد */
+    margin: 0;
+    padding: 0;
+}
+
+/* تصميم شريط التنقل (الناف بار) */
+header {
+    background-color: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* ظل خفيف جداً */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: centre;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #888888;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    color: #d4a373; /* لون بني/ذهبي فاتح هادئ عند الوقوف على الرابط */
+}
+
+/* تصميم الجزء الرئيسي والعناوين */
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.page-title {
+    color: #333333;
+    margin-bottom: 5px;
+    font-size: 32px;
+}
+
+.subtitle {
+    color: #888888;
+    margin-bottom: 40px;
+}
+
+/* تصميم (المنيو) */
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* تصميم كل وجبة */
+.menu-item {
+    background-color: #ffffff;
+    border: 1px solid #f0eee9;
+    border-radius: 10px;    
+    padding: 25px;
+    width: 260px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px); /* حركة بسيطة للأعلى عند مرور الماوس */
+}
+
+.menu-item h2 {
+    font-size: 22px;
+    margin-top: 0;
+    color: #d4a373; /* نفس اللون الذهبي الهادئ للعناوين */
+}
+
+.menu-item p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666666;
+}
+
+.price {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333333;
+    margin-top: 15px;
+}
+
+/* تصميم الفوتر */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #aaaaaa;
+    font-size: 13px;
+    margin-top: 50px;
+    border-top: 1px solid #f0eee9;
+}
+
+ .container {
+            background: rgb(236, 228, 224);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgb(163, 163, 161);
+            width: 100%;
+            max-width: 400px;
+        }
+        h2 { text-align: center; color: #0a0a09; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input[type="text"], input[type="email"], input[type="password"] {         width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; /* لضمان عدم خروج المدخلات عن الحواف */
+        }
+        background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* الحجز */
+.booking-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+/* العنوان */
+.title {
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+/* مجموعة المدخلات */
+.form-group {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+/* خانة الكالندر */
+input[type="datetime-local"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    box-sizing: border-box; /* عشان الـ Padding ميبوظش المقاس */
+    transition: border-color 0.3s ease;
+}
+
+input[type="datetime-local"]:focus {
+    border-color: #e67e22; /* لون برتقالي عند الضغط */
+}
+
+/* زرار التأكيد */
+.confirm-btn {
+    width: 100%;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.confirm-btn:hover {
+    background-color: #d35400;
+    transform: translateY(-2px);
+}
+        .radio-group, .checkbox-group { margin: 10px 0; }
+        .inline { display: flex; gap: 10px; align-items: center; margin-top: 5px; }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #c39428;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover { background-color: #b7c51b; }
+/* تصميم صور الأكلات جوه المنيو */
+.food-image {
+    width: 100%; /* بيخلي الصورة تاخد عرض البوكس كله بالظبط */
+    height: 180px; /* بيثبت طول الصورة عشان كل البوكسات تطلع قد بعضها */
+    object-fit: cover; /* بيمنع الصورة إنها تتمط أو تتبكسل وشكلها يبوظ */
+    border-radius: 8px; /* بيعمل دوران خفيف لحواف الصورة لايق مع البوكس */
+    margin-bottom: 15px; /* بيعمل مسافة صغيرة بين الصورة واسم الأكلة */
+}
